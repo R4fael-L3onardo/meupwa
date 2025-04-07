@@ -20,6 +20,7 @@ const assets = [
     "icons/icon-72x72.png",
     "icons/icon-48x48.png",
 ]
+
 self.addEventListener("install", installEvent => {
     installEvent.waitUntil(
         caches.open(staticPwaADS).then(cache => {
